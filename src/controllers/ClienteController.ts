@@ -30,7 +30,7 @@ export const createCliente = async (req: Request, res: Response): Promise<void> 
 }
 
 
-// Obtener todos clientes.
+// Obtener todos los clientes.
 export const getAllclientes = async (req: Request, res: Response): Promise<void> => {
     try {
         const clientes = await prisma.findMany()
