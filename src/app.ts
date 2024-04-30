@@ -10,14 +10,15 @@ const app = express();
 
 app.use(express.json())
 
+// Configuración de CORS
+app.use(cors({
+    origin: ['http://localhost:4200']
+}));
+
 // Routes
 app.use('/auth', authRoutes)
 app.use('/users', userRoutes)
 app.use('/clientes', clienteRoutes)
 
-// Configuración de CORS
-app.use(cors({
-    origin: ['http://localhost:4200']
-}));
 
 export default app
