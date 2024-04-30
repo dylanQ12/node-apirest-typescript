@@ -1,4 +1,3 @@
-import { error } from 'console';
 import express, { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import { GetAllUsers, createUser, deleteUser, getUserById, updateUser } from '../controllers/UserController';
